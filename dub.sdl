@@ -1,0 +1,7 @@
+name "mockservice"
+description "A controllable mock service."
+authors "Jesse Phillips"
+copyright "Copyright © 2018, Jesse Phillips"
+license "Boost 1.0"
+
+dependency "vibe-d" version="~>0.8.2"

@@ -1,0 +1,15 @@
+{
+	"paths" : {
+		"/MockAddress/test" : {
+			"get" : {
+				"response": {
+					"header" : {
+						"Content-Type" : "text/plain"
+					},
+					"payload" : "Hello there",
+					"status" : 200
+				}
+			}
+		}
+	}
+}
