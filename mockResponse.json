@@ -10,6 +10,17 @@
 					"status" : 200
 				}
 			}
+		},
+		"/MockAddress/testfile" : {
+			"get" : {
+				"response": {
+					"header" : {
+						"Content-Type" : "text/plain"
+					},
+					"$fileref" : "content.txt",
+					"status" : 200
+				}
+			}
 		}
 	}
 }

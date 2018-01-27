@@ -1,14 +1,22 @@
 module mockservice.protocol;
 
 import vibe.data.serialization;
+import vibe.data.json;
+import vibe.http.common;
 
 struct HttpRequest {
     string[string] header;
+    @optional
     string payload;
     @optional
-    int status;
+    @name("$fileref")
+    string fileref;
     @optional
-    string method;
+    Json jsonPayload;
+    @optional
+    int status;
+    @byName @optional
+    HTTPMethod method;
     @optional
     string requestURI;
 }
